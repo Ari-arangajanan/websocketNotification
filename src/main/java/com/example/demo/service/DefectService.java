@@ -14,6 +14,7 @@ public class DefectService {
 	@Autowired
 	private NoficationService notification;
 
+	
 	public Defect defectSave(Defect defect) {
 		notification.sendGlobalNotification();
 		return repo.save(defect);
