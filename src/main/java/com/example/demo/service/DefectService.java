@@ -11,6 +11,7 @@ public class DefectService {
 
 	@Autowired
 	private Repository repo;
+	@Autowired
 	private NoficationService notification;
 
 	public Defect defectSave(Defect defect) {
