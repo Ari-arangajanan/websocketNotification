@@ -21,5 +21,6 @@ public class NoficationService {
 		ResponceMessage message=new ResponceMessage("Global Notification");
 		messagingTemplate.convertAndSend("/topic/global-notifications", message);;
 	}
+	
 
 }
