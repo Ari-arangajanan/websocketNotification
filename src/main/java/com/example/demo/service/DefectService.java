@@ -11,9 +11,10 @@ public class DefectService {
 
 	@Autowired
 	private Repository repo;
+	private NoficationService notification;
 
 	public Defect defectSave(Defect defect) {
-		
+		notification.sendGlobalNotification();
 		return repo.save(defect);
 	}
 	
