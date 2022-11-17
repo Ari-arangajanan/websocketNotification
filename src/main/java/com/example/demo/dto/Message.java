@@ -9,4 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Message {
   private String message;
+  
+  
+  public static Message message(String message) {
+	  return new Message(message);
+  }
 }

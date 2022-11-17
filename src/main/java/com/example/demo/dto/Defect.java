@@ -23,4 +23,5 @@ public class Defect {
 	@Column(name="Defect_Id")
 	private int id;
 	private String name;
+	
 }

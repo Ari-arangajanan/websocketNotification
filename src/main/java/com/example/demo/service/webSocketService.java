@@ -3,6 +3,8 @@ package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
+
+import com.example.demo.dto.Message;
 import com.example.demo.dto.ResponceMessage;
 
 /**
@@ -21,8 +23,8 @@ public class webSocketService {
 		this.notification = notification;
 	}
 	
-	public void notifyFrontend(final String message) {
-		ResponceMessage response=new ResponceMessage(message);
+	public void notifyFrontend(final Message message) {
+		ResponceMessage response=new ResponceMessage(message.getMessage());
 		notification.sendGlobalNotification();
 		messageTemplete.convertAndSend("/topic/messages", response);
 	}
