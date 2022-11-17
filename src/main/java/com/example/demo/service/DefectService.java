@@ -20,6 +20,7 @@ public class DefectService {
 		return repo.save(defect);
 	}
 	public void showNotification(Message message) {
+		
 		WSService.notifyFrontend(message);
 	}
 	
