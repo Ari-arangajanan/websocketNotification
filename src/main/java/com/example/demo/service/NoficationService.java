@@ -1,13 +1,10 @@
 package com.example.demo.service;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
-
-import com.example.demo.dto.ListOfNofification;
-import com.example.demo.dto.Message;
 import com.example.demo.dto.ResponceMessage;
 
 @Service

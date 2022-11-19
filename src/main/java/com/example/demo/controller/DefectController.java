@@ -20,7 +20,6 @@ public class DefectController {
 	@PostMapping("/defect")
 	public Defect saveDefect(@RequestBody Defect defect, ListOfNofification notification) {
 		service.showNotification();
-		service.saveNotification(notification);
 		return service.defectSave(defect);
 	}
 }

@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
 @Entity
 @Table(name="Defect")
 public class Defect {
@@ -23,5 +24,7 @@ public class Defect {
 	@Column(name="Defect_Id")
 	private int id;
 	private String name;
+	
+	private String message;
 	
 }

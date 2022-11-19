@@ -6,4 +6,6 @@ import com.example.demo.dto.ListOfNofification;
 
 public interface NotificationRepo extends JpaRepository<ListOfNofification, Integer>{
 
+
+
 }
