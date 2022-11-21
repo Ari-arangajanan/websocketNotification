@@ -25,6 +25,6 @@ public class Defect {
 	private int id;
 	private String name;
 	
-	private String message;
+	private String notificationMessage;
 	
 }
